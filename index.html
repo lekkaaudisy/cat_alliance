@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Alliance - Precision. Power. Progress.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Include particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background Container -->
+    <div id="particles-js"></div>
+
+    <!-- Header/Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">C<span>A</span>T</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <svg class="cat-logo-svg" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Simple Futuristic Cat Eye Outline -->
+                <defs>
+                    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path class="eye-outline" d="M 10 50 Q 50 10, 100 50 Q 150 90, 190 50 Q 150 10, 100 50 Q 50 90, 10 50 Z" stroke-width="3" fill="none" filter="url(#neon-glow)"/>
+                <circle class="pupil" cx="100" cy="50" r="10" fill="#00ffff"/>
+            </svg>
+            <h1 class="alliance-name">// C A T //</h1>
+            <p class="tagline" id="tagline"></p>
+            <a href="#join" class="cta-button"><span>Engage Protocol</span><i></i></a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about" class="content-section animate-on-scroll">
+            <h2>// ANALYZE // STRATEGIZE // DOMINATE //</h2>
+            <div class="divider"></div>
+            <p>CAT is not just an alliance; it's a collective consciousness geared towards strategic supremacy in [Game Name]. We operate with the precision of a predator, the agility of circuits, and the unwavering focus of a planned strike. We don't survive; we advance, we conquer, we define the meta.</p>
+            <div class="cards">
+                <div class="card">
+                    <i class="icon-placeholder"> // Icon: Brain/Chip // </i>
+                    <h3>Strategic Depth</h3>
+                    <p>Mastermind complex operations and outmaneuver opponents with superior planning.</p>
+                </div>
+                <div class="card">
+                     <i class="icon-placeholder"> // Icon: Network/Nodes // </i>
+                    <h3>Coordinated Force</h3>
+                    <p>Execute flawless tactics through seamless communication and synchronized action.</p>
+                </div>
+                <div class="card">
+                     <i class="icon-placeholder"> // Icon: Upward Arrow/Graph // </i>
+                    <h3>Constant Evolution</h3>
+                    <p>Adapt and innovate, staying ahead of the curve in a dynamic digital battlefield.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="content-section animate-on-scroll">
+            <h2>// OUR DIRECTIVES //</h2>
+            <div class="divider"></div>
+            <p>Our core mission is to establish CAT as the preeminent force within [Game Name]. We achieve this through:</p>
+            <ul class="mission-list">
+                <li><span class="glitch" data-text="Technological Superiority">Technological Superiority</span> - Mastering game mechanics and resource optimization.</li>
+                <li><span class="glitch" data-text="Information Warfare">Information Warfare</span> - Gathering intelligence and controlling the flow of information.</li>
+                <li><span class="glitch" data-text="Unbreakable Unity">Unbreakable Unity</span> - Fostering a strong, loyal, and active community.</li>
+                <li><span class="glitch" data-text="Calculated Aggression">Calculated Aggression</span> - Executing decisive actions for maximum impact.</li>
+            </ul>
+             <div class="hologram-effect">
+                Initializing CAT Protocol... Accessing Core Directives... Status: Optimal.
+                <br> Alliance Integrity: 100%
+                <br> Strategic Readiness: Engaged
+            </div>
+        </section>
+
+        <section id="join" class="content-section animate-on-scroll">
+            <h2>// INITIATE INTEGRATION //</h2>
+            <div class="divider"></div>
+            <p>Ready to transcend the ordinary? CAT seeks dedicated, strategically-minded players who are ready to contribute to a greater design. If you possess the drive to excel and the will to collaborate, your place may be among us.</p>
+            <p>Connect with our recruitment node:</p>
+            <a href="[Link to your Discord / Application Forum]" target="_blank" class="cta-button secondary"><span>Access Recruitment Channel</span><i></i></a>
+            <div class="requirements">
+                <h3>Minimum Requirements:</h3>
+                <ul>
+                    <li>Active participation</li>
+                    <li>Strategic mindset</li>
+                    <li>Team communication (Discord)</li>
+                    <li>[Add any specific game-related requirements]</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="year"></span> CAT Alliance | All Systems Operational</p>
+        <p>Forged in the circuits of [Game Name]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
